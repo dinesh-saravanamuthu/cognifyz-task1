@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Cognifyz Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="asset/cognifyz-1.png" alt="Cognifyz Logo" class="logo">
+            <span class="brand-name">Cognifyz Technologies</span>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="login.html" class="nav-link">Register</a></li>
+                <li><a href="basic-cal.html" class="nav-link">Calculator</a></li>
+                <li><button id="theme-toggle" class="toggle-btn">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="courses-section">
+        <h1>Our Internship Programs</h1>
+        <div class="courses-grid">
+
+            <div class="course-card">
+                <img src="asset/Artificial Intelligence (AI) Inter.jpeg" alt="AI Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Artificial Intelligence (AI)</h3>
+                    <p>Build intelligent systems such as chatbots and recommendation engines.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Cloud Computing Intern.jpeg" alt="Cloud Computing Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Cloud Computing</h3>
+                    <p>Work with cloud platforms like AWS or Azure to deploy and manage applications.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Cyber Security Intern.jpeg" alt="Cyber Security Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Cyber Security</h3>
+                    <p>Protect systems and networks from cyber threats and security attacks.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Data Science Intern.jpeg" alt="Data Science Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Data Science</h3>
+                    <p>Analyze data to find insights using Python, statistics, and visualization tools.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Machine Learning Intern.jpeg" alt="Machine Learning Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Machine Learning</h3>
+                    <p>Develop models that allow systems to learn and make predictions from data.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Mobile App Development Intern.jpeg" alt="App Development Internship"
+                    class="course-image">
+                <div class="course-content">
+                    <h3>App Development</h3>
+                    <p>Create applications for Android or iOS devices.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Python Developer Intern.jpeg" alt="Python Developer Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Python Developer</h3>
+                    <p>Use Python to develop applications, scripts, and automation tools.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Software Developer Intern.jpeg" alt="Software Developer Internship"
+                    class="course-image">
+                <div class="course-content">
+                    <h3>Software Developer</h3>
+                    <p>Work on designing, coding, and maintaining software applications.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="asset/Web Development Intern.jpeg" alt="Web Development Internship" class="course-image">
+                <div class="course-content">
+                    <h3>Web Development</h3>
+                    <p>Build websites using HTML, CSS, JavaScript, and frameworks to create responsive web pages.</p>
+                    <a href="login.html" class="course-link">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Dinesh All rights reserved.</p>
+    </footer>
+
+    <script>
+        const headerBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        headerBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                headerBtn.innerText = 'Light Mode';
+            } else {
+                headerBtn.innerText = 'Dark Mode';
+            }
+        });
+    </script>
+</body>
+
+</html>
