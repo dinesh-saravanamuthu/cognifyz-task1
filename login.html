@@ -31,26 +31,32 @@
             <form action="#">
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    <input type="email" id="email" name="email" required placeholder="abc@example.com">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required placeholder="********">
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
                 </div>
 
                 <div class="form-group">
                     <label for="confirm-password">Confirm Password</label>
                     <input type="password" id="confirm-password" name="confirm-password" required
-                        placeholder="********">
+                        placeholder="Re-enter your password">
                 </div>
 
-                <button type="submit" class="submit-btn" onclick="return false;">Join Program</button>
+                <button type="submit" class="submit-btn" onclick="showAlert()">Join Program</button>
+                <script>
+                    function showAlert(){
+                       alert("You have successfully registered for the course.");
+
+                    }
+                </script>
             </form>
         </div>
     </main>
