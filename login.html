@@ -53,8 +53,16 @@
                 <button type="submit" class="submit-btn" onclick="showAlert()">Join Program</button>
                 <script>
                     function showAlert(){
-                       alert("You have successfully registered for the course.");
+                        const nameField = document.getElementById('name').value;
+                        const emailField = document.getElementById('email').value;
+                        const passwordField = document.getElementById('password').value;
+                        const confirmPasswordField = document.getElementById('confirm-password').value;
 
+                        
+
+                       if (nameField && emailField && passwordField && confirmPasswordField) {
+                            alert("You have successfully registered for the course.");
+                       }
                     }
                 </script>
             </form>
@@ -67,3 +75,4 @@
 </body>
 
 </html>
+
